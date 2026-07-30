@@ -76,7 +76,7 @@ High-throughput screening → multi-dimensional scoring → KEGG/GO enrichment �
 | [HandEye-Tsai](https://github.com/zc-xzc/HandEye-Tsai) — Tsai calibration + VICON | MATLAB |
 | [Water_robot](https://github.com/zc-xzc/Water_robot) — underwater YOLOv5 | C, YOLO |
 | [Docker-Localization](https://github.com/zc-xzc/Docker-Localization) ★1 — cross-registry mirror | GitHub Actions |
-| [Dual-eye 3D Recon](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system---Two-target-calibration---Stereoscopic-correction) — stereo + YOLOv12 | Python, OpenCV |
+| [Dual-eye 3D Recon](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system) — stereo + YOLOv12 | Python, OpenCV |
 
 ---
 
