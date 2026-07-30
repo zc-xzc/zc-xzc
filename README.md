@@ -1,167 +1,143 @@
-# Zicheng Xu
+# 🚀 Zicheng Xu
 
-`Mechanism · Algorithm · Intelligence`
+**Mechanism · Algorithm · Intelligence**
 
-Email: **xzc18155121449@163.com**
-
----
-
-I build robot systems where **hardware design and software algorithms are co-optimized** — from 3D-printed mechanical structures and embedded servo control to physics-informed neural networks and real-time perception pipelines. My work spans the full robotics stack: mechanical CAD, embedded firmware, control systems, computer vision, deep learning, and simulation.
+*Email: xzc18155121449@163.com*
 
 ---
 
-## Active Vision Platform
+## 📋 Portfolio Overview
 
-*PICO 4 head tracking → dual-axis STS3032 gimbal → Intel RealSense D415 — "head moves, view moves"*
+| Project | Description | Stars | Tags |
+|---|---|---|---|
+| [**robot_platform**](https://github.com/zc-xzc/robot_platform) | Head-tracking active vision gimbal for humanoid robots — full-stack hardware + software | ★ 3 | `Python·ROS·3DPrint·RealSense` |
+| [**fsi-coatings**](https://github.com/zc-xzc/fsi-coatings) | FSI multi-field coupling simulation of bridge coating degradation with PINNs | | `Python·FEM·PINNs·FSI` |
+| [**TCM-Immuno**](https://github.com/zc-xzc/TCM-Immuno-AntiTumor-Screening) | Multi-omics screening platform for immune-activating anti-tumor TCM components | ★ 1 | `Python·Bioinfo·LLM·NetworkPharm` |
+| [**MathViz**](https://github.com/zc-xzc/MathViz) | Interactive 3D/2D math visualizations for linear algebra & calculus | | `Three.js·D3.js·WebGL` |
+| [**HandEye-Tsai**](https://github.com/zc-xzc/HandEye-Tsai) | Hand-eye calibration with Tsai method — real camera + VICON mocap | | `MATLAB·Calibration` |
+| [**Water_robot**](https://github.com/zc-xzc/Water_robot) | YOLOv5 underwater perception for low-visibility environments | | `C·YOLO·Embedded` |
+| [**Docker-Localization**](https://github.com/zc-xzc/Docker-Localization) | Docker image mirroring to Alibaba Cloud via GitHub Actions | ★ 1 | `Docker·GitHubActions` |
+| [**Dual-eye 3D Recon**](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system---Two-target-calibration---Stereoscopic-correction) | Binocular stereo vision with YOLOv12 optimization | | `Python·OpenCV·Stereo` |
 
-**System pipeline:**
+---
 
-```mermaid
-flowchart LR
-    H["PICO 4 + PicoBridge"] -- "head pose over Wi-Fi" --> C["Windows/Linux controller"]
-    C -- "USB-TTL / 1 Mbps" --> S1["STS3032 ID 1<br/>Yaw / Pan"]
-    S1 --> S2["STS3032 ID 2<br/>Pitch / Tilt"]
-    S2 --> D["RealSense D415<br/>on 2-DOF mount"]
-    D -- "USB 3.0 video" --> C
-    C -. "PicoBridge video path" .-> H
-```
+## 🤖 robot_platform — Active Vision for Humanoid Robots ★ 3
+
+*PICO 4 head tracking → dual-axis STS3032 gimbal → Intel RealSense D415*
+
+**End-to-end system where mechanical design, embedded control, and computer vision converge into a single perception platform.**
 
 <table>
 <tr>
-<td width="33%" align="center"><img src="./assets/front_view.jpg" width="100%" /></td>
-<td width="33%" align="center"><img src="./assets/assembly_completed.jpg" width="100%" /></td>
-<td width="34%" align="center"><img src="./assets/final_perspective.jpg" width="100%" /></td>
+<td align="center" width="50%"><img src="./assets/exploded_overview.jpg" width="100%" /><br/><sub>Exploded view — all mechanical components</sub></td>
+<td align="center" width="50%"><img src="./assets/final_perspective.jpg" width="100%" /><br/><sub>Assembled camera gimbal — final perspective</sub></td>
 </tr>
 <tr>
-<td align="center"><sub>2-DOF camera gimbal — front view</sub></td>
-<td align="center"><sub>Fully assembled on wheeled robot</sub></td>
-<td align="center"><sub>Camera module and mounting structure</sub></td>
+<td align="center" width="50%"><img src="./assets/left_side_view.jpg" width="100%" /><br/><sub>Left side — full gimbal assembly on robot</sub></td>
+<td align="center" width="50%"><img src="./assets/right_side_view.jpg" width="100%" /><br/><sub>Right side — alternate perspective</sub></td>
 </tr>
 </table>
 
 **System architecture:**
 
-| Layer | Component | Specification |
+| Layer | Component | Spec |
 |---|---|---|
-| Motion capture | PICO 4 VR headset | Quaternion head pose at ~50 Hz, body-relative tracking |
-| Servo control | Feetech STS3032 × 2 | Yaw ID1 + Pitch ID2, RS485 bus, 1 Mbps, 12 V |
-| Depth camera | Intel RealSense D415 | 1280×720 depth + RGB, USB 3.0 |
-| Controller | Windows/Linux PC | PD controller, limit calibration, video forwarding |
-| Mechanical | 3D-printed PLA/PETG | Full STL + STEP, BOM, assembly guide included |
-| Simulation | URDF + MuJoCo + Gazebo | Digital twin before hardware deployment |
+| 🎮 Operator input | PICO 4 VR headset | Quaternion head pose @ ~50 Hz |
+| ⚙️ Actuation | Feetech STS3032 × 2 | RS485 bus, 1 Mbps, 12 V |
+| 📷 Perception | Intel RealSense D415 | 1280×720 depth + RGB |
+| 🖥️ Controller | Windows / Linux PC | PD controller + calibration + video |
+| 🔧 Mechanics | Custom 3D-printed mount | PLA/PETG, STL + STEP, full BOM |
+| 🕹️ Simulation | URDF + MuJoCo + Gazebo | Digital twin before hardware |
 
-This is the core of **[robot_platform](https://github.com/zc-xzc/robot_platform)**.
-
-*Python, ROS, C++, RealSense, 3D Printing, URDF, MuJoCo*
+**Includes:** printable STL/STEP files · PD controller with configurable limits · limit calibration · servo PID tuning · URDF + Gazebo launch files · MuJoCo XML · Unitree G1 adapter parts · ZED Mini variant support
 
 ---
 
-## Featured Projects
+## 🏗️ fsi-coatings — FSI × Steel Coating Aging
 
-### [robot_platform](https://github.com/zc-xzc/robot_platform) ★ 3
+**Multi-field coupling research: fluid-structure interaction meets physics-informed deep learning for infrastructure durability.**
 
-An end-to-end active vision system for humanoid robots. The operator wears a PICO 4 headset; head movement is captured as quaternion data, transformed into body-relative yaw/pitch commands, and sent over USB-TTL to two STS3032 servos driving a custom 2-DOF camera gimbal. The RealSense D415 follows the operator's view and streams video back through PicoBridge.
-
-**Includes:**
-- Printable STL/STEP mechanical models (main mount, tilt bracket, camera support)
-- Active vision distribution package for Windows and Linux
-- PD controller with configurable limits, offsets, acceleration, and direction
-- First-run limit calibration and servo PID/dead-zone tuning
-- URDF description + Gazebo launch files + MuJoCo XML
-- Compatible with Unitree G1 humanoid robot (via adapter parts)
-- ZED Mini stereo camera variant also supported
-
----
-
-### [fsi-coatings](https://github.com/zc-xzc/fsi-coatings)
-
-A research notebook exploring **fluid-structure interaction (FSI) for steel bridge coating degradation** — a multi-field coupling problem involving mechanical stress, thermal cycling, and hygrothermal diffusion in protective coatings.
-
-**Methodology:** Physics-informed neural networks (PINNs) + finite element analysis (FEM)
-
-**Repository structure:**
 ```
 topics/fsi-coatings/
-├── papers/            annotated reading notes on FSI literature
-├── codes/             numerical experiments and reproduction
-│   ├── paper-reproduction/  Qi Yanfu model fitting
-│   └── reproduction/        run_all.py pipeline
-├── references/        curated bibliography, software install guides
-└── projects/          project management documents
+├── papers/          annotated literature (Qi Yanfu et al.)
+├── codes/           reproduction & numerical experiments
+│   ├── paper-reproduction/    model fitting scripts
+│   └── reproduction/         automated pipeline (run_all.py)
+├── references/      curated bibliography + install guides
+└── projects/        project management
 ```
 
-*Python, FEM, PINNs, FSI*
+Steel bridge coatings degrade under coupled **mechanical stress + thermal cycling + hygrothermal diffusion**. This project uses PINNs + FEM to model the interaction and predict remaining useful life.
 
 ---
 
-### [TCM-Immuno-AntiTumor-Screening](https://github.com/zc-xzc/TCM-Immuno-AntiTumor-Screening) ★ 1
+## 💊 TCM-Immuno-AntiTumor-Screening ★ 1
 
-Multi-dimensional data analysis platform for screening **immune-activating anti-tumor active components** from Traditional Chinese Medicine (TCM). Integrates LLM-based retrieval-augmented generation with multi-omics data processing to identify candidate compounds with dual immune-activation and anti-tumor efficacy.
+**Multi-dimensional drug discovery: screening Traditional Chinese Medicine for compounds with dual immune-activation and anti-tumor efficacy.**
 
-**Screening workflow:**
-High-throughput data processing → multi-dimensional scoring → KEGG/GO enrichment analysis → PPI network construction → drug-target-pathway integration → candidate ranking
-
-**Key analysis outputs:**
+**Workflow:** High-throughput processing → multi-dimensional scoring → KEGG/GO enrichment → PPI network → drug-target-pathway integration → candidate ranking
 
 <table>
 <tr>
-<td width="50%" align="center"><img src="./assets/tcm_drug_target_network.svg" width="95%" /><br/><sub>Drug-target interaction network — compound-protein relationships</sub></td>
-<td width="50%" align="center"><img src="./assets/tcm_correlation_heatmap.svg" width="95%" /><br/><sub>Multi-omics feature correlation heatmap — immune and tumor markers</sub></td>
+<td align="center" width="50%"><img src="./assets/tcm_drug_target_network.svg" width="95%" /><br/><sub>Compound-protein interaction network</sub></td>
+<td align="center" width="50%"><img src="./assets/tcm_correlation_heatmap.svg" width="95%" /><br/><sub>Multi-omics feature correlation — immune & tumor markers</sub></td>
 </tr>
 <tr>
-<td width="50%" align="center"><img src="./assets/tcm_target_pathway_network.svg" width="95%" /><br/><sub>Drug-target-pathway network — mechanism of action analysis</sub></td>
-<td width="50%" align="center"><img src="./assets/tcm_score_distribution.png" width="95%" /><br/><sub>Candidate compound scoring — immune activation vs anti-tumor activity</sub></td>
+<td align="center" width="50%"><img src="./assets/tcm_kegg_bubble.png" width="95%" /><br/><sub>KEGG pathway enrichment — mechanism analysis</sub></td>
+<td align="center" width="50%"><img src="./assets/tcm_score_distribution.png" width="95%" /><br/><sub>Candidate scoring: immune activation vs anti-tumor activity</sub></td>
 </tr>
 </table>
 
-*Python, Data Science, Bioinformatics, LLM, Network Pharmacology*
-
 ---
 
-### [MathViz](https://github.com/zc-xzc/MathViz) — [Live Demo](https://zc-xzc.github.io/MathViz/)
+## 📐 MathViz — Interactive Math Visualization
 
-Interactive math visualization platform that transforms abstract mathematical concepts into observable, manipulable 3D and 2D structures. Built with Three.js and D3.js.
+*[Live Demo →](https://zc-xzc.github.io/MathViz/)*
 
-**Current modules:**
-- **Linear algebra** — 3D equation system solver supporting arbitrary 3×3 matrix input with dynamic solution reconstruction
-- **Higher mathematics** — calculus visualizations (in development)
-- **Exam prep zone** — formula reference and categorized problem index
+Transforming abstract mathematics into observable, manipulable 3D/2D structures. Built on Three.js + D3.js.
 
-**Planned:** eigenvector visualization, Riemann sum demonstration, Taylor series expansion, ε-δ limit illustration.
-
-*HTML, Three.js, D3.js, WebGL*
-
----
-
-## Other Work
-
-| Project | Description | Tools |
+| Module | Status | Description |
 |---|---|---|
-| [HandEye-Tsai](https://github.com/zc-xzc/HandEye-Tsai) | Hand-eye calibration using Tsai method with real camera + VICON motion capture data | MATLAB |
-| [Water_robot](https://github.com/zc-xzc/Water_robot) | YOLOv5 detection pipeline adapted for underwater low-visibility perception | C, YOLO |
-| [Docker-Localization](https://github.com/zc-xzc/Docker-Localization) ★ 1 | Automated Docker image mirroring from Docker Hub to Alibaba Cloud via GitHub Actions | GitHub Actions, Docker |
-| [Dual-eye 3D Recon](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system---Two-target-calibration---Stereoscopic-correction) | Binocular stereo vision system with dual-target calibration, stereo correction, and YOLOv12 optimization | Python, OpenCV |
+| 3D Equation System Solver | ✅ Live | Arbitrary 3×3 matrix input, dynamic solution reconstruction |
+| Calculus Visualizations | 🔄 In progress | Limit, derivative, integral demonstrations |
+| Eigenvector Visualization | 📋 Planned | Interactive geometric interpretation |
+| Exam Prep Zone | 📋 Planned | Formula reference + problem index |
 
 ---
 
-## Technical Competencies
+## 🔬 Other Research & Tools
 
-**Languages:** Python, MATLAB, C, C++, Bash  
-**Deep Learning:** PyTorch, ONNX, YOLO, Physics-Informed Neural Networks  
-**Robotics:** ROS (Noetic/Humble), MoveIt, Gazebo, MuJoCo  
-**Computer Vision:** OpenCV, RealSense SDK, Stereo Matching, Hand-Eye Calibration, YOLO  
-**Hardware:** STM32, Jetson Orin/Nano, PICO 4, Feetech STS3032 Servos, 3D Printing (FDM/SLA)  
-**CAD:** SolidWorks, Fusion 360, Autodesk Inventor  
-**Tools:** Docker, Git, Linux, LaTeX
-
----
-
-## Contact
-
-- **Email:** xzc18155121449@163.com
-- **GitHub:** [zc-xzc](https://github.com/zc-xzc)
-- **Bilibili:** [space.bilibili.com/1664940404](https://space.bilibili.com/1664940404)
+| Project | Key Contribution | Tools |
+|---|---|---|
+| [HandEye-Tsai](https://github.com/zc-xzc/HandEye-Tsai) | Hand-eye calibration with Tsai method — validated with real camera + VICON | `MATLAB` |
+| [Water_robot](https://github.com/zc-xzc/Water_robot) | YOLOv5 adapted for underwater perception — solves low-visibility detection | `C` `YOLO` |
+| [Docker-Localization](https://github.com/zc-xzc/Docker-Localization) ★ 1 | Automated cross-registry Docker image mirroring | `GitHub Actions` |
+| [Dual-eye 3D Reconstruction](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system---Two-target-calibration---Stereoscopic-correction) | Full-stack stereo vision with dual-target calibration + YOLOv12 | `Python` `OpenCV` |
 
 ---
 
-<sub>Mechanism · Algorithm · Intelligence</sub>
+## 🛠️ Technical Arsenal
+
+| Domain | Skills |
+|---|---|
+| **Languages** | Python, MATLAB, C, C++, Bash |
+| **Deep Learning** | PyTorch, ONNX, YOLO, Physics-Informed Neural Networks |
+| **Robotics** | ROS (Noetic/Humble), MoveIt, Gazebo, MuJoCo |
+| **Computer Vision** | OpenCV, RealSense SDK, Stereo Matching, Hand-Eye Calibration |
+| **Hardware** | STM32, Jetson Orin/Nano, PICO 4, Feetech STS3032, 3D Printing (FDM/SLA) |
+| **CAD & Design** | SolidWorks, Fusion 360, Autodesk Inventor |
+| **DevOps & Tools** | Docker, Git, Linux, LaTeX, GitHub Actions |
+
+---
+
+## 📬 Contact & Links
+
+| | |
+|---|---|
+| 📧 **Email** | xzc18155121449@163.com |
+| 🐙 **GitHub** | [zc-xzc](https://github.com/zc-xzc) |
+| 🎬 **Bilibili** | [space.bilibili.com/1664940404](https://space.bilibili.com/1664940404) |
+
+---
+
+<sub>**Mechanism · Algorithm · Intelligence**</sub>
