@@ -16,12 +16,15 @@
 
 *PICO 4 → STS3032 gimbal → RealSense D415 — full-stack active vision*
 
-| | | |
-|---|---|---|
-| <img src="./assets/exploded_overview.jpg" width="100%" /> | <img src="./assets/final_perspective.jpg" width="100%" /> | <img src="./assets/left_side_view.jpg" width="100%" /> |
-| Exploded view | Assembled gimbal | Side view on robot |
+<table>
+<tr>
+<td width="33%" align="center"><img src="./assets/exploded_overview.jpg" width="100%" /><br/><sub>Exploded view</sub></td>
+<td width="33%" align="center"><img src="./assets/final_perspective.jpg" width="100%" /><br/><sub>Assembled gimbal</sub></td>
+<td width="34%" align="center"><img src="./assets/left_side_view.jpg" width="100%" /><br/><sub>On robot platform</sub></td>
+</tr>
+</table>
 
-Tracking → PD controller → serial-bus servos → depth video → simulation. Includes STL parts, URDF/MuJoCo, Win/Linux control software, Unitree G1 adapter.
+Tracking → PD controller → serial-bus servos → depth video → simulation. STL parts, URDF/MuJoCo, Win/Linux software, Unitree G1 adapter.
 
 ---
 
@@ -32,7 +35,7 @@ Multi-field coupling of steel bridge coating degradation: PINNs + FEM under mech
 ```
 topics/fsi-coatings/
 ├── papers/         literature notes (Qi Yanfu et al.)
-├── codes/          reproduction & numerical experiments  
+├── codes/          reproduction & numerical experiments
 ├── references/     bibliography & software guides
 └── projects/       task management
 ```
@@ -45,13 +48,18 @@ topics/fsi-coatings/
 
 High-throughput screening → multi-dimensional scoring → KEGG/GO enrichment → PPI network → drug-target-pathway → candidate ranking
 
-<img src="./assets/tcm_abstract_v13.png" width="100%" />
-
-<br/>
-
-| | | | |
-|---|---|---|---|
-| <img src="./assets/tcm_multiomics.png" width="100%" /><br/>Multi-omics integration | <img src="./assets/tcm_network_pathway.png" width="100%" /><br/>Network-pathway analysis | <img src="./assets/tcm_molecular_docking.png" width="100%" /><br/>Molecular docking | <img src="./assets/tcm_immune_workflow.png" width="100%" /><br/>Immune workflow |
+<table>
+<tr>
+<td align="center"><img src="./assets/tcm_abstract_v13.png" width="100%" /><br/><sub>Graphical abstract — screening overview</sub></td>
+<td align="center"><img src="./assets/tcm_multiomics.png" width="100%" /><br/><sub>Multi-omics integration framework</sub></td>
+<td align="center"><img src="./assets/tcm_network_pathway.png" width="100%" /><br/><sub>Network pharmacology pathway</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="./assets/tcm_molecular_docking.png" width="100%" /><br/><sub>Molecular docking workflow</sub></td>
+<td align="center"><img src="./assets/tcm_immune_workflow.png" width="100%" /><br/><sub>Immune activation workflow</sub></td>
+<td align="center"><img src="./assets/tcm_v14_ultimate_abstract.png" width="100%" /><br/><sub>Ultimate abstract — full mechanism</sub></td>
+</tr>
+</table>
 
 ---
 
