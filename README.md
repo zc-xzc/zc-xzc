@@ -6,13 +6,27 @@
 
 ---
 
-| [**robot_platform**](https://github.com/zc-xzc/robot_platform) ★3 | [**embodied-ai-learning-handbook**](https://github.com/zc-xzc/embodied-ai-learning-handbook) | [**TCM-Immuno**](https://github.com/zc-xzc/TCM-Immuno-AntiTumor-Screening) ★1 | [**fsi-coatings**](https://github.com/zc-xzc/fsi-coatings) |
+| [**embodied-ai-learning-handbook**](https://github.com/zc-xzc/embodied-ai-learning-handbook) ★7 | [**robot_platform**](https://github.com/zc-xzc/robot_platform) ★3 | [**uav-leaflet-dispenser**](https://github.com/zc-xzc/uav-leaflet-dispenser) | [**TCM-Immuno**](https://github.com/zc-xzc/TCM-Immuno-AntiTumor-Screening) |
 |---|---|---|---|
-| Active vision for humanoid robots | 1800+ paper embodied AI guide | Multi-omics TCM drug screening | FSI × steel coating simulation |
+| 1800+ paper embodied AI guide | Active vision for humanoid robots | UAV single-sheet dispenser + patent | Multi-omics TCM drug screening |
 
-| [**MathViz**](https://github.com/zc-xzc/MathViz) | [**HandEye-Tsai**](https://github.com/zc-xzc/HandEye-Tsai) | [**Water_robot**](https://github.com/zc-xzc/Water_robot) | [**Docker-Localization**](https://github.com/zc-xzc/Docker-Localization) ★1 |
+| [**fsi-coatings**](https://github.com/zc-xzc/fsi-coatings) | [**MathViz**](https://github.com/zc-xzc/MathViz) | [**academic-tools**](https://github.com/zc-xzc/academic-tools) | [**Docker-Localization**](https://github.com/zc-xzc/Docker-Localization) ★1 |
 |---|---|---|---|
-| Interactive 3D/2D math viz | Tsai calibration + VICON | Underwater YOLOv5 perception | Cross-registry Docker mirror |
+| FSI × steel coating simulation | Interactive 3D/2D math viz | Policy-text analysis toolkit | Cross-registry Docker mirror |
+
+---
+
+## 📚 embodied-ai-learning-handbook ★7
+
+**具身智能学习手册 — 1800+ 论文系统性知识指南**
+
+覆盖 VLA 模型、遥操作、Sim2Real、强化学习等完整知识体系。17 个目录、69 篇 Markdown 文档，从理论到前沿到实战，整合顶会论文（CVPR/AAAI/ICLR/NeurIPS）、仿真环境（MuJoCo/Isaac Lab）、数据飞轮与遥操作（ALOHA/UMI）等全栈资源。
+
+```
+学习路径 → 基础理论 → 经典算法 → 前沿技术 → 仿真环境 → 数据飞轮 → 项目实战 → 行业求职
+```
+
+`VLA` `Imitation Learning` `Sim2Real` `Teleoperation` `Reinforcement Learning` `MuJoCo` `Isaac Lab`
 
 ---
 
@@ -32,21 +46,19 @@ STL parts · URDF/MuJoCo · PD controller · Win/Linux · Unitree G1
 
 ---
 
-## 📚 embodied-ai-learning-handbook
+## 🛸 uav-leaflet-dispenser
 
-**具身智能学习手册 — 1800+ 论文系统性知识指南**
+**无人机挂载式单张纸页分离投放装置**
 
-覆盖 VLA 模型、遥操作、Sim2Real、强化学习等完整知识体系的系统性学习指南。17 个目录、69 篇 Markdown 文档，从理论到前沿到实战。
+面向中型多旋翼无人机，打印机式搓纸分纸实现单张分离，配主动出纸快门遮蔽巡航，导纸通道使纸张切入旋翼下洗流减小落点漂移，微控制器实现单张 / 连续 / 飞控联动多模式投放。
 
-```
-学习路径 → 基础理论 → 经典算法 → 前沿技术 → 仿真环境 → 数据飞轮 → 项目实战 → 行业求职
-```
+📄 含 **专利交底书源稿** 及完整技术文档（需求规格 / 总体方案 / 查新报告 / 测试验收）
 
-`VLA` `Imitation Learning` `Sim2Real` `Teleoperation` `Reinforcement Learning` `MuJoCo` `Isaac Lab`
+`Mechanical Design` `Embedded Control` `Patent`
 
 ---
 
-## 💊 TCM-Immuno-AntiTumor-Screening ★1
+## 💊 TCM-Immuno-AntiTumor-Screening
 
 **Multi-omics drug discovery from Traditional Chinese Medicine**
 
@@ -67,15 +79,17 @@ High-throughput screening → multi-dimensional scoring → KEGG/GO enrichment �
 
 ---
 
-## 🏗️ fsi-coatings
+## 🔧 Other Projects
 
-PINNs + FEM for steel bridge coating degradation under coupled mechanical-thermal-hygro environments.
-
----
-
-## 📐 MathViz
-
-[Live Demo](https://zc-xzc.github.io/MathViz/) — 3D equation solver (✅) · calculus viz (🔄) · eigenvectors (📋)
+| Project | Description | Stack |
+|---|---|---|
+| [fsi-coatings](https://github.com/zc-xzc/fsi-coatings) | PINNs + FEM for steel bridge coating degradation | Python, PINNs, FSI |
+| [MathViz](https://github.com/zc-xzc/MathViz) | [Live Demo](https://zc-xzc.github.io/MathViz/) — interactive 3D/2D math | Three.js, D3.js |
+| [academic-tools](https://github.com/zc-xzc/academic-tools) | Policy-text analysis, file/PDF batch processing, Claude skills | Python |
+| [HandEye-Tsai](https://github.com/zc-xzc/HandEye-Tsai) | Tsai hand-eye calibration + VICON | MATLAB |
+| [Water_robot](https://github.com/zc-xzc/Water_robot) | Underwater YOLOv5 perception | C, YOLO |
+| [Docker-Localization](https://github.com/zc-xzc/Docker-Localization) ★1 | Cross-registry Docker mirror | GitHub Actions |
+| [Dual-eye 3D Recon](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system) | Binocular stereo + YOLOv12 | Python, OpenCV |
 
 ---
 
