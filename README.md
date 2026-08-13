@@ -48,11 +48,11 @@ STL parts · URDF/MuJoCo · PD controller · Win/Linux · Unitree G1
 
 ## 🧭 embodied-intelligence
 
-**巨神智能 Embodied Intelligence — 具身智能项目系列门户与索引**
+**巨神智能 Embodied Intelligence — 具身智能研究方向日志与项目索引**
 
-具身智能项目系列的 Portal & Index，从学习手册到机器人平台，集中索引全部具身智能相关仓库与文档。
+纯研究方向日志：记录具身智能 / 人形机器人方向的研究路线，同时作为具身智能项目系列的 Portal & Index，从学习手册到机器人平台，集中索引全部相关仓库与文档。
 
-`Embodied Intelligence` `Portal` `Index`
+`Embodied Intelligence` `Research Directions` `Portal` `Index`
 
 ---
 
@@ -100,6 +100,9 @@ High-throughput screening → multi-dimensional scoring → KEGG/GO enrichment �
 | [Water_robot](https://github.com/zc-xzc/Water_robot) | Underwater YOLOv5 perception | C, YOLO |
 | [Docker-Localization](https://github.com/zc-xzc/Docker-Localization) ★1 | Cross-registry Docker mirror | GitHub Actions |
 | [Dual-eye 3D Recon](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system) | Binocular stereo + YOLOv12 | Python, OpenCV |
+| [AI-Vision](https://github.com/zc-xzc/AI-Vision) | Object detection & face recognition (TFLite) | Python, TensorFlow Lite |
+| [yolov5-master](https://github.com/zc-xzc/yolov5-master) | YOLOv5 env: Py3.9 + PyTorch 2.0.1 + CUDA 11.8 | Python, YOLO |
+| [ros](https://github.com/zc-xzc/ros) | ROS Docker env: URDF / Gazebo / MoveIt | ROS, Docker |
 
 ---
 
