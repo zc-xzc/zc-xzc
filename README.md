@@ -6,9 +6,9 @@
 
 ---
 
-| [**embodied-ai-learning-handbook**](https://github.com/zc-xzc/embodied-ai-learning-handbook) ★19 | [**robot_platform**](https://github.com/zc-xzc/robot_platform) ★3 | [**embodied-intelligence**](https://github.com/zc-xzc/embodied-intelligence) | [**uav-leaflet-dispenser**](https://github.com/zc-xzc/uav-leaflet-dispenser) |
+| [**embodied-ai-learning-handbook**](https://github.com/zc-xzc/embodied-ai-learning-handbook) ★23 | [**robot_platform**](https://github.com/zc-xzc/robot_platform) ★3 | [**embodied-intelligence**](https://github.com/zc-xzc/embodied-intelligence) | [**uav-leaflet-dispenser**](https://github.com/zc-xzc/uav-leaflet-dispenser) |
 |---|---|---|---|
-| 1800+ paper embodied AI guide | Active vision for humanoid robots | Embodied AI project portal & index | UAV single-sheet dispenser + patent |
+| 1800+ paper embodied AI guide | Head-tracking active vision platform | Embodied AI project portal & index | UAV single-sheet dispenser + patent |
 
 | [**TCM-Immuno**](https://github.com/zc-xzc/TCM-Immuno-AntiTumor-Screening) | [**fsi-coatings**](https://github.com/zc-xzc/fsi-coatings) | [**MathViz**](https://github.com/zc-xzc/MathViz) | [**academic-tools**](https://github.com/zc-xzc/academic-tools) |
 |---|---|---|---|
@@ -16,7 +16,7 @@
 
 ---
 
-## 📚 embodied-ai-learning-handbook ★19
+## 📚 embodied-ai-learning-handbook ★23
 
 **具身智能学习手册 — 1800+ 论文系统性知识指南**
 
@@ -93,11 +93,11 @@ High-throughput screening → multi-dimensional scoring → KEGG/GO enrichment �
 
 | Project | Description | Stack |
 |---|---|---|
-| [fsi-coatings](https://github.com/zc-xzc/fsi-coatings) | PINNs + FEM for steel bridge coating degradation | Python, PINNs, FSI |
+| [fsi-coatings](https://github.com/zc-xzc/fsi-coatings) | FSI numerical simulation × multi-field coupling aging of steel coatings | Python, PINNs, FSI |
 | [MathViz](https://github.com/zc-xzc/MathViz) | [Live Demo](https://zc-xzc.github.io/MathViz/) — interactive 3D/2D math | Three.js, D3.js |
 | [academic-tools](https://github.com/zc-xzc/academic-tools) | Multi-source policy-text library & statistical analysis | Python |
 | [HandEye-Tsai](https://github.com/zc-xzc/HandEye-Tsai) | Tsai hand-eye calibration + VICON | MATLAB |
-| [Water_robot](https://github.com/zc-xzc/Water_robot) | Underwater YOLOv5 perception | C, YOLO |
+| [Water_robot](https://github.com/zc-xzc/Water_robot) | Underwater stereo perception + FSI modeling (bionic fins) | C, YOLO |
 | [Docker-Localization](https://github.com/zc-xzc/Docker-Localization) ★1 | Cross-registry Docker mirror | GitHub Actions |
 | [Dual-eye 3D Recon](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system) | Binocular stereo + YOLOv12 | Python, OpenCV |
 | [AI-Vision](https://github.com/zc-xzc/AI-Vision) | Object detection & face recognition (TFLite) | Python, TensorFlow Lite |
