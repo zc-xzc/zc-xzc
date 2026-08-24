@@ -6,17 +6,17 @@
 
 ---
 
-| [**embodied-ai-learning-handbook**](https://github.com/zc-xzc/embodied-ai-learning-handbook) ★23 | [**robot_platform**](https://github.com/zc-xzc/robot_platform) ★3 | [**embodied-intelligence**](https://github.com/zc-xzc/embodied-intelligence) | [**uav-leaflet-dispenser**](https://github.com/zc-xzc/uav-leaflet-dispenser) |
+| [**embodied-ai-learning-handbook**](https://github.com/zc-xzc/embodied-ai-learning-handbook) ★26 | [**robot_platform**](https://github.com/zc-xzc/robot_platform) ★3 | [**embodied-intelligence**](https://github.com/zc-xzc/embodied-intelligence) | [**uav-leaflet-dispenser**](https://github.com/zc-xzc/uav-leaflet-dispenser) |
 |---|---|---|---|
 | 1800+ paper embodied AI guide | Head-tracking active vision platform | Embodied AI project portal & index | UAV single-sheet dispenser + patent |
 
-| [**fsi-coatings**](https://github.com/zc-xzc/fsi-coatings) | [**MathViz**](https://github.com/zc-xzc/MathViz) | [**academic-tools**](https://github.com/zc-xzc/academic-tools) | [**HandEye-Tsai**](https://github.com/zc-xzc/HandEye-Tsai) |
+| [**SO-ARM100**](https://github.com/zc-xzc/SO-ARM100) | [**fsi-coatings**](https://github.com/zc-xzc/fsi-coatings) | [**MathViz**](https://github.com/zc-xzc/MathViz) | [**academic-tools**](https://github.com/zc-xzc/academic-tools) |
 |---|---|---|---|
-| FSI × steel coating simulation | Interactive 3D/2D math viz | Policy-text library & analysis | Tsai hand-eye calibration + VICON |
+| Open-source 3D-printable robot arm | FSI × steel coating simulation | Interactive 3D/2D math viz | Policy-text library & statistical analysis |
 
 ---
 
-## 📚 embodied-ai-learning-handbook ★23
+## 📚 embodied-ai-learning-handbook ★26
 
 **具身智能学习手册 — 1800+ 论文系统性知识指南**
 
@@ -43,6 +43,16 @@
 </table>
 
 STL parts · URDF/MuJoCo · PD controller · Win/Linux · Unitree G1
+
+---
+
+## 🦾 SO-ARM100
+
+**Standard Open Arm 100 — 开源低成本机械臂平台（SO-100 / SO-101）**
+
+SO-100/SO-101 3D 打印机械臂：引导臂 / 跟随臂遥操作方案，适配 Hugging Face LeRobot 生态，用于机器人遥操作与数据采集研究。含 3D 打印件、装配指南及可选硬件（相机支架、增高底座、柔性夹爪等）。
+
+`3D Printing` `Robotic Arm` `Teleoperation` `LeRobot`
 
 ---
 
@@ -74,6 +84,7 @@ STL parts · URDF/MuJoCo · PD controller · Win/Linux · Unitree G1
 |---|---|---|
 | [Water_robot](https://github.com/zc-xzc/Water_robot) | Underwater stereo perception + FSI modeling (bionic fins) | C, YOLO |
 | [Docker-Localization](https://github.com/zc-xzc/Docker-Localization) ★1 | Cross-registry Docker mirror | GitHub Actions |
+| [HandEye-Tsai](https://github.com/zc-xzc/HandEye-Tsai) | Tsai hand-eye calibration + VICON | MATLAB |
 | [Dual-eye 3D Recon](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system) | Binocular stereo + YOLOv12 | Python, OpenCV |
 | [AI-Vision](https://github.com/zc-xzc/AI-Vision) | Object detection & face recognition (TFLite) | Python, TensorFlow Lite |
 | [yolov5-master](https://github.com/zc-xzc/yolov5-master) | YOLOv5 env: Py3.9 + PyTorch 2.0.1 + CUDA 11.8 | Python, YOLO |
