@@ -6,7 +6,7 @@
 
 ---
 
-| [**embodied-ai-learning-handbook**](https://github.com/zc-xzc/embodied-ai-learning-handbook) ★29 | [**robot_platform**](https://github.com/zc-xzc/robot_platform) ★4 | [**embodied-intelligence**](https://github.com/zc-xzc/embodied-intelligence) | [**uav-leaflet-dispenser**](https://github.com/zc-xzc/uav-leaflet-dispenser) |
+| [**embodied-ai-learning-handbook**](https://github.com/zc-xzc/embodied-ai-learning-handbook) ★38 | [**robot_platform**](https://github.com/zc-xzc/robot_platform) ★5 | [**embodied-intelligence**](https://github.com/zc-xzc/embodied-intelligence) | [**uav-leaflet-dispenser**](https://github.com/zc-xzc/uav-leaflet-dispenser) |
 |---|---|---|---|
 | 1800+ paper embodied AI guide | Head-tracking active vision platform | Embodied AI project portal & index | UAV single-sheet dispenser + patent |
 
@@ -16,7 +16,7 @@
 
 ---
 
-## 📚 embodied-ai-learning-handbook ★29
+## 📚 embodied-ai-learning-handbook ★38
 
 **具身智能学习手册 — 1800+ 论文系统性知识指南**
 
@@ -30,7 +30,7 @@
 
 ---
 
-## 🤖 robot_platform ★4
+## 🤖 robot_platform ★5
 
 *PICO 4 → STS3032 gimbal → RealSense D415 — full-stack active vision for humanoid robots*
 
