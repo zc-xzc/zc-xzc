@@ -9,7 +9,7 @@ Mechanism · Algorithm · Intelligence
 
 [邮件联系](mailto:xzc18155121449@163.com) · [Bilibili](https://space.bilibili.com/1664940404) · [全部仓库](https://github.com/zc-xzc?tab=repositories)
 
-[精选项目](#精选项目) · [研究与技术方案](#研究与技术方案) · [更多工程与笔记](#更多工程与笔记) · [开源复用与参考](#开源复用与参考) · [技术领域](#技术领域)
+[精选项目](#user-content-精选项目) · [研究与技术方案](#user-content-研究与技术方案) · [更多工程与笔记](#user-content-更多工程与笔记) · [开源复用与参考](#user-content-开源复用与参考) · [技术领域](#user-content-技术领域)
 
 ## 从这里开始
 
