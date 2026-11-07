@@ -15,7 +15,7 @@ Mechanism · Algorithm · Intelligence
 
 - **看机器人软硬件协同：** [主动视觉平台](https://github.com/zc-xzc/robot_platform)，从机械结构、头部追踪到云台控制。
 - **找具身智能学习路线：** [具身智能学习手册](https://github.com/zc-xzc/embodied-ai-learning-handbook)，按主题组织理论、论文与实践资源。
-- **看交互作品源码：** [MathViz 数学可视化](https://github.com/zc-xzc/MathViz)，从三维线性方程组理解解的几何意义。
+- **在线体验交互作品：** [MathViz 数学可视化](https://zc-xzc.github.io/MathViz/)，从三维线性方程组理解解的几何意义。
 
 ## 精选项目
 
@@ -69,9 +69,9 @@ Mechanism · Algorithm · Intelligence
 
 把抽象数学概念转成可以观察和操作的空间结构。当前核心模块是 **3×3 线性方程组三维求解器**：输入矩阵与方程参数，观察解集的几何形态，理解“非齐次通解 = 特解 + 齐次通解”。
 
-当前以这一线性代数模块为主；其他数学专题仍在规划。可从仓库查看页面源码与模块说明。
+当前以这一线性代数模块为主；其他数学专题仍在规划。可直接在浏览器体验，或从仓库查看页面源码与模块说明。
 
-[项目与使用说明](https://github.com/zc-xzc/MathViz) · [三维求解器源码](https://github.com/zc-xzc/MathViz/blob/main/线性代数/非齐次解三维演示/index.html)
+[在线体验](https://zc-xzc.github.io/MathViz/) · [打开三维求解器](https://zc-xzc.github.io/MathViz/线性代数/非齐次解三维演示/) · [项目与使用说明](https://github.com/zc-xzc/MathViz)
 
 ### 05 · academic-tools / 科研与文件处理工具箱
 
