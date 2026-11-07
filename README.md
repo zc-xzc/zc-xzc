@@ -1,132 +1,152 @@
-# Zicheng Xu · 许子成
+# 许子成 · Zicheng Xu
 
-**Mechanism · Algorithm · Intelligence**
+**机器人机构设计 · 视觉感知 · 具身智能**<br/>
+Mechanism · Algorithm · Intelligence
 
-📧 xzc18155121449@163.com
+围绕**机构与算法协同**，关注机器人如何感知环境、执行动作，以及如何把研究问题转化为可查看的模型、代码和实验方案。这里集中展示我的工程项目、研究设计与学习资料，并区分各项目当前已公开的内容和验证阶段。
 
----
+*Working across robot mechanisms, visual perception, and embodied AI. This profile brings together engineering projects, research concepts, and study resources, with links to the underlying work.*
 
-| [**embodied-ai-learning-handbook**](https://github.com/zc-xzc/embodied-ai-learning-handbook) ★71 | [**robot_platform**](https://github.com/zc-xzc/robot_platform) ★7 | [**postharvest-agent-framework**](https://github.com/zc-xzc/postharvest-agent-framework) | [**uav-leaflet-dispenser**](https://github.com/zc-xzc/uav-leaflet-dispenser) |
-|---|---|---|---|
-| 1800+ paper embodied AI guide | Head-tracking active vision platform | Closed-loop postharvest fruit handling | UAV single-sheet dispenser + patent |
+[邮件联系](mailto:xzc18155121449@163.com) · [Bilibili](https://space.bilibili.com/1664940404) · [全部仓库](https://github.com/zc-xzc?tab=repositories)
 
-| [**SO-ARM100**](https://github.com/zc-xzc/SO-ARM100) | [**embodied-intelligence**](https://github.com/zc-xzc/embodied-intelligence) | [**ai-biopharma-notes**](https://github.com/zc-xzc/ai-biopharma-notes) | [**academic-tools**](https://github.com/zc-xzc/academic-tools) |
-|---|---|---|---|
-| Open-source 3D-printable robot arm | Embodied AI project portal & index | AI × drug discovery study notes | Policy-text library & statistical analysis |
+[精选项目](#精选项目) · [研究与技术方案](#研究与技术方案) · [更多工程与笔记](#更多工程与笔记) · [开源复用与参考](#开源复用与参考) · [技术领域](#技术领域)
 
----
+## 从这里开始
 
-## 📚 embodied-ai-learning-handbook ★71
+- **看机器人软硬件协同：** [主动视觉平台](https://github.com/zc-xzc/robot_platform)，从机械结构、头部追踪到云台控制。
+- **找具身智能学习路线：** [具身智能学习手册](https://github.com/zc-xzc/embodied-ai-learning-handbook)，按主题组织理论、论文与实践资源。
+- **看交互作品源码：** [MathViz 数学可视化](https://github.com/zc-xzc/MathViz)，从三维线性方程组理解解的几何意义。
 
-**具身智能学习手册 — 1800+ 论文系统性知识指南**
+## 精选项目
 
-覆盖 VLA 模型、遥操作、Sim2Real、强化学习等完整知识体系。17 个目录、69 篇 Markdown 文档，从理论到前沿到实战，整合顶会论文（CVPR/AAAI/ICLR/NeurIPS）、仿真环境（MuJoCo/Isaac Lab）、数据飞轮与遥操作（ALOHA/UMI）等全栈资源。
+### 01 · 主动视觉平台 / robot_platform
 
-```
-学习路径 → 基础理论 → 经典算法 → 前沿技术 → 仿真环境 → 数据飞轮 → 项目实战 → 行业求职
-```
+**工程代码与硬件设计资产 · 头部追踪 / 两自由度云台 / RGB-D 视觉**
 
-`VLA` `Imitation Learning` `Sim2Real` `Teleoperation` `Reinforcement Learning` `MuJoCo` `Isaac Lab`
+面向人形机器人遥操作场景，将 **PICO 4 头部姿态 → STS3032 两轴云台 → RealSense D415 相机视角** 串联起来，让操作者的视线变化与机器人摄像头朝向关联。
 
----
-
-## 🤖 robot_platform ★7
-
-*PICO 4 → dual-axis gimbal → RealSense D415 — full-stack active vision for humanoid robots*
+- **控制与感知：** Windows / Linux Python 入口，姿态映射、PD 控制、标定与诊断工具。
+- **机械与仿真：** STEP / STL 结构文件、BOM、装配说明，以及 URDF / MuJoCo（MJCF）模型资产。
+- **使用边界：** 真机运行需要对应硬件和 PicoBridge 组件；模型可动性与使用方法以各目录说明为准。
 
 <table>
-<tr>
-<td width="33%" align="center"><img src="./assets/exploded_overview.jpg" width="100%" /><br/><sub>Exploded view</sub></td>
-<td width="33%" align="center"><img src="./assets/final_perspective.jpg" width="100%" /><br/><sub>Assembled gimbal</sub></td>
-<td width="34%" align="center"><img src="./assets/left_side_view.jpg" width="100%" /><br/><sub>On robot platform</sub></td>
-</tr>
+  <tr>
+    <td width="33%" align="center"><img src="./assets/exploded_overview.jpg" alt="主动视觉云台结构分解 CAD 渲染图" width="100%" /><br/><sub>结构分解 · CAD 渲染</sub></td>
+    <td width="34%" align="center"><img src="./assets/final_perspective.jpg" alt="主动视觉云台总装 CAD 渲染图" width="100%" /><br/><sub>总装视图 · CAD 渲染</sub></td>
+    <td width="33%" align="center"><img src="./assets/left_side_view.jpg" alt="主动视觉云台侧向结构 CAD 渲染图" width="100%" /><br/><sub>侧向结构 · CAD 渲染</sub></td>
+  </tr>
 </table>
 
-3D-printable mounts · URDF/SDF models · PD controller · Win/Linux · Unitree G1
+[项目总览](https://github.com/zc-xzc/robot_platform) · [中文运行说明](https://github.com/zc-xzc/robot_platform/blob/main/active_vision_dist/README_CN.md) · [机械安装教程](https://github.com/zc-xzc/robot_platform/blob/main/3d_print_parts/avp_model/docs/installation_mechanical.md) · [物料清单](https://github.com/zc-xzc/robot_platform/blob/main/3d_print_parts/avp_model/bom/avp_model_BOM.xlsx)
 
----
+### 02 · 具身智能学习手册 / embodied-ai-learning-handbook
 
-## 🍎 postharvest-agent-framework
+**学习资料与资源整理 · 从基础理论到研究方向**
 
-**采后水果处理闭环智能系统 — 概念研究框架**
+按主题组织具身智能知识与公开资源，帮助学习者建立连贯的学习路线。内容涵盖视觉-语言-动作模型（VLA）、模仿学习、强化学习、遥操作、仿真、Sim2Real、数据采集与主动视觉。
 
-五段式前向管线配两条反馈回路：物理输入与感知 → 多模态品质推断（逐对象状态 `q = (g, d, m, u)`，即等级 / 缺陷 / 质量 / 不确定度）→ 监督智能体任务规划（仅检索·推理·提议，**不直接驱动电机**）→ 安全门控下的柔顺操作（力 / 速度 / 工作空间限幅）→ 可追溯审计输出（对象 ID、传感证据、动作日志，PASS / RECHECK / REJECT）。
+- **如何使用：** 先确定学习路径，再按专题阅读基础概念、论文和工具资料。
+- **可以找到：** 理论笔记、论文导读、MuJoCo / Isaac Lab 等仿真资源，以及 ALOHA / UMI 等遥操作资料。
+- **来源与许可：** 参考 Embodied-AI-Guide、Xbotics-Embodied-Guide 等社区资料整理，详见[致谢](https://github.com/zc-xzc/embodied-ai-learning-handbook/blob/main/ACKNOWLEDGMENTS.md)；使用时遵循仓库标注的 CC BY-NC-SA 4.0 及引用资源许可。
 
-验证设计明确可证伪：独立批次 + 人工核验标注 + 跨批次与光照迁移，B0 规则固定抓取 / B1 视觉分拣 / B2 加约束规划 / B3 加智能体与闭环审计四组消融。当前为概念设计阶段，收录框架图与设计说明，暂不含数据集与实验结果。
+[手册首页](https://github.com/zc-xzc/embodied-ai-learning-handbook) · [学习路径](https://github.com/zc-xzc/embodied-ai-learning-handbook/blob/main/00-总览与学习路径/00.2-学习路径规划.md) · [资源导航](https://github.com/zc-xzc/embodied-ai-learning-handbook/blob/main/00-总览与学习路径/00.3-资源导航地图.md) · [主动视觉专题](https://github.com/zc-xzc/embodied-ai-learning-handbook/blob/main/12-主动视觉专项/12.1-主动视觉技术全景与论文综述.md)
 
-`Multimodal Perception` `Constraint-aware Planning` `Robotic Manipulation` `Traceable Audit`
+### 03 · 双目三维重建 / Stereo 3D Reconstruction
 
----
+**视觉代码集成 · 标定 / 深度估计 / 三维重建**
 
-## 🧬 ai-biopharma-notes
+围绕双目相机的空间感知流程，组织相机标定、立体校正与匹配、视差和深度计算、点云重建，以及手眼标定与坐标转换相关代码。
 
-**AI × 药物发现学习笔记 — 行业图谱 · 方法论 · 公开工具**
+- **可查看内容：** 重建流程与自定义算法目录、标定工具、数据增强与可视化材料、YOLOv12 集成代码。
+- **技术重点：** 从二维图像建立空间几何关系，为测距、定位与机器人视觉应用提供代码参考。
+- **复用说明：** 仓库包含第三方组件，使用前需查看各组件许可与来源说明。
 
-五章公开资料整理：行业周期与格局、从表型到靶点的反向找靶（target fishing）、数据质量与多组学整合、可解释性与因果链、公开数据库与工具地图；附 ChEMBL 活性检索与 RDKit 结构归一化示例脚本。纯公开来源、论断附出处，CC BY 4.0。
+[项目与目录说明](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system) · [重建流程](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system/tree/main/stereo_reconstruction_working) · [第三方说明](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system/blob/main/THIRD_PARTY_NOTICES.md)
 
-`AI for Drug Discovery` `Target Identification` `Multi-omics` `RDKit`
+### 04 · MathViz / 让数学看得见
 
----
+**浏览器交互作品 · 线性代数可视化**
 
-## 🦾 SO-ARM100
+把抽象数学概念转成可以观察和操作的空间结构。当前核心模块是 **3×3 线性方程组三维求解器**：输入矩阵与方程参数，观察解集的几何形态，理解“非齐次通解 = 特解 + 齐次通解”。
 
-**Standard Open Arm 100 — 开源低成本机械臂平台（SO-100 / SO-101）**
+当前以这一线性代数模块为主；其他数学专题仍在规划。可从仓库查看页面源码与模块说明。
 
-*(fork of [TheRobotStudio/SO-ARM100](https://github.com/TheRobotStudio/SO-ARM100))*
+[项目与使用说明](https://github.com/zc-xzc/MathViz) · [三维求解器源码](https://github.com/zc-xzc/MathViz/blob/main/线性代数/非齐次解三维演示/index.html)
 
-SO-100/SO-101 3D 打印机械臂：引导臂 / 跟随臂遥操作方案，适配 Hugging Face LeRobot 生态，用于机器人遥操作与数据采集研究。含 3D 打印件、装配指南及可选硬件（相机支架、增高底座、柔性夹爪等）。
+### 05 · academic-tools / 科研与文件处理工具箱
 
-`3D Printing` `Robotic Arm` `Teleoperation` `LeRobot`
+**Python 工具集 · 文本分析 / 批量处理 / 工作流整理**
 
----
+把重复的科研资料处理工作整理为脚本与说明，包括政策文本要素提取、描述性统计、文件合并与重命名、PDF 整理和视频抽帧。
 
-## 🧭 embodied-intelligence
+- **输入与输出：** 面向已有文件或文本目录进行处理；政策统计脚本可生成 Markdown 报告与图表。
+- **使用方式：** 按模块选择工具，配置输入输出路径与依赖，不依赖统一应用界面。
+- **扩展内容：** 另收录科研与效率相关的技能定义、流程文档；第三方材料保留来源和许可说明。
 
-**具身智能 Embodied Intelligence — 研究方向日志与项目索引**
+[工具总览](https://github.com/zc-xzc/academic-tools) · [政策统计脚本](https://github.com/zc-xzc/academic-tools/blob/main/classification/policy/policy_stats.py) · [文件处理](https://github.com/zc-xzc/academic-tools/tree/main/file_utils) · [来源与许可](https://github.com/zc-xzc/academic-tools/blob/main/THIRD_PARTY_NOTICES.md)
 
-纯研究方向日志：记录具身智能 / 人形机器人方向的研究路线，同时作为具身智能项目系列的 Portal & Index，从学习手册到机器人平台，集中索引全部相关仓库与文档。
+## 研究与技术方案
 
-`Embodied Intelligence` `Research Directions` `Portal` `Index`
+以下项目展示问题定义、系统设计与验证思路，阶段与工程实现项目分开说明。
 
----
+### 采后水果处理智能框架 / postharvest-agent-framework
 
-## 🛸 uav-leaflet-dispenser
+**阶段：概念研究设计。当前公开框架图与设计说明，尚无实现代码、数据集或实验结果。**
 
-**无人机挂载式单张纸页分离投放装置**
+围绕水果采后处理，设计“感知 → 品质推断 → 任务规划 → 安全门控操作 → 追溯审计”的闭环。监督智能体用于检索、推理和动作提议，不直接驱动电机；设计中保留力、速度和工作空间约束。
 
-UAV-mounted single-sheet paper dispensing device — 面向中型多旋翼无人机，打印机式搓纸分纸实现单张分离，配主动出纸快门遮蔽巡航，导纸通道使纸张切入旋翼下洗流减小落点漂移，微控制器实现单张 / 连续 / 飞控联动多模式投放。
+验证方案包括独立批次、人工核验、跨批次与光照变化，以及 B0–B3 对照实验，用于检验约束规划与闭环审计是否带来实际改进。
 
-📄 含 **专利交底书源稿** 及完整技术文档（需求规格 / 总体方案 / 查新报告 / 测试验收）
+[项目说明](https://github.com/zc-xzc/postharvest-agent-framework) · [框架图](https://github.com/zc-xzc/postharvest-agent-framework/blob/main/figures/postharvest_agent_framework_en.svg) · [设计与验证方案](https://github.com/zc-xzc/postharvest-agent-framework/blob/main/docs/framework-overview.md)
 
-`Mechanical Design` `Embedded Control` `Patent`
+### 无人机单张纸页投放装置 / uav-leaflet-dispenser
 
----
+**阶段：技术方案与文档设计。包含专利交底书源稿，不表示已获专利授权。**
 
-## 🔧 Other Projects
+提出无人机挂载式单张纸页分离投放方案，围绕搓纸分离、出纸快门、导纸通道与控制模式展开机械和电控设计。
 
-| Project | Description | Stack |
-|---|---|---|
-| [Water_robot](https://github.com/zc-xzc/Water_robot) | Underwater stereo perception + FSI modeling (bionic fins) | C, YOLO |
-| [fsi-coatings](https://github.com/zc-xzc/fsi-coatings) | 流固耦合数值模拟 × 钢结构涂层多场耦合老化 | Python |
-| [MathViz](https://github.com/zc-xzc/MathViz) | Interactive 3D/2D math visualization — 把抽象概念变成可观察的空间结构 | HTML |
-| [HandEye-Tsai](https://github.com/zc-xzc/HandEye-Tsai) | Fork — Tsai hand-eye calibration + VICON | MATLAB |
-| [Dual-eye 3D Recon](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system) | Binocular stereo + YOLOv12 | Python, OpenCV |
-| [AI-Vision](https://github.com/zc-xzc/AI-Vision) | Object detection & face recognition (TFLite) | Python, TensorFlow Lite |
-| [yolov5-master](https://github.com/zc-xzc/yolov5-master) | YOLOv5 env: Py3.9 + PyTorch 2.0.1 + CUDA 11.8 | Python, YOLO |
-| [ros](https://github.com/zc-xzc/ros) | ROS Docker env: URDF / Gazebo / MoveIt | ROS, Docker |
-| [Docker-Localization](https://github.com/zc-xzc/Docker-Localization) ★1 | Fork — cross-registry Docker mirror → Alibaba Cloud ACR | GitHub Actions |
-| [midea-local](https://github.com/zc-xzc/midea-local) | Fork — local LAN control for Midea M-Smart appliances | Lua |
+已公开需求规格、总体方案、研制计划、测试验收方案及专利交底稿；仓库尚未提供 CAD、固件、样机照片或实测结果。文档中的性能指标属于设计与验收目标。
 
----
+[项目总览](https://github.com/zc-xzc/uav-leaflet-dispenser) · [总体技术方案](https://github.com/zc-xzc/uav-leaflet-dispenser/blob/main/03_总体技术方案设计.md) · [测试与验收方案](https://github.com/zc-xzc/uav-leaflet-dispenser/blob/main/06_测试与验收方案.md)
 
-## 🛠️ Skills
+## 更多工程与笔记
 
-Python · PyTorch · MATLAB · C/C++ · ROS · OpenCV · RealSense · STM32 · Jetson · Docker · Git · Linux · SolidWorks · Fusion 360
+| 项目 | 公开内容与定位 |
+| --- | --- |
+| [Water_robot · 水下机器人](https://github.com/zc-xzc/Water_robot) | 双目视觉、Jetson / TensorRT 部署与 FSI-FNO 建模代码的集成仓库；包含第三方组件。 |
+| [AI-Vision · 视觉工具](https://github.com/zc-xzc/AI-Vision) | TensorFlow Lite 检测、识别训练、相机配置与串口工具；部分教程和模型资产的来源仍待核验。 |
+| [ros · 机器人开发环境](https://github.com/zc-xzc/ros) | ROS Docker 启动脚本、机械臂与夹爪 URDF、RViz / Gazebo 配置及操作说明。 |
+| [embodied-intelligence · 研究方向日志](https://github.com/zc-xzc/embodied-intelligence) | 力反馈遥操作、主动视觉、人形机器人全身控制等方向的调研、技术空白与开放问题。 |
+| [fsi-coatings · 数值模拟笔记](https://github.com/zc-xzc/fsi-coatings) | 流固耦合与涂层耐久性学习记录，包含文献笔记、FEniCS 教程和数据分析脚本。 |
+| [ai-biopharma-notes · AI × 药物发现](https://github.com/zc-xzc/ai-biopharma-notes) | 基于公开来源的学习笔记，附 ChEMBL 检索与 RDKit 结构归一化示例；不代表药物研发实验成果。 |
 
----
+## 开源复用与参考
 
-📧 xzc18155121449@163.com · 🐙 [github.com/zc-xzc](https://github.com/zc-xzc) · 🎬 [space.bilibili.com/1664940404](https://space.bilibili.com/1664940404)
+以下仓库是上游项目的 Fork 或基于上游代码的整理，单独列出以明确来源。具体改动与使用许可请查看各仓库。
 
----
+| 仓库 | 来源与用途 |
+| --- | --- |
+| [SO-ARM100](https://github.com/zc-xzc/SO-ARM100) | Fork 自 [TheRobotStudio/SO-ARM100](https://github.com/TheRobotStudio/SO-ARM100)，低成本 SO-100 / SO-101 机械臂、装配与遥操作资料。 |
+| [HandEye-Tsai](https://github.com/zc-xzc/HandEye-Tsai) | Fork 自 [LarryDong/HandEye-Tsai](https://github.com/LarryDong/HandEye-Tsai)，Tsai 手眼标定的 MATLAB 实现与示例。 |
+| [Docker-Localization](https://github.com/zc-xzc/Docker-Localization) | Fork 自 [tech-shrimp/docker_image_pusher](https://github.com/tech-shrimp/docker_image_pusher)，通过 GitHub Actions 同步容器镜像。 |
+| [midea-local](https://github.com/zc-xzc/midea-local) | Fork 自 [midea-lan/midea-local](https://github.com/midea-lan/midea-local)，美的 M-Smart 设备局域网控制。 |
+| [yolov5-master](https://github.com/zc-xzc/yolov5-master) | 基于 [Ultralytics YOLOv5](https://github.com/ultralytics/yolov5) 的代码与环境整理，保留上游框架归属。 |
 
-<sub>Mechanism · Algorithm · Intelligence</sub>
+## 技术领域
+
+按项目中的实际用途整理，便于快速找到相关工作。
+
+| 领域 | 技术与对应实践 |
+| --- | --- |
+| 机械设计与系统集成 | CAD、STEP / STL、3D 打印、BOM、装配设计；见主动视觉平台。 |
+| 机器人控制与仿真 | Python、PD 控制、ROS、URDF、MuJoCo / MJCF；见云台控制与 ROS 环境。 |
+| 视觉感知与部署 | OpenCV、双目标定与重建、RealSense、YOLO、TensorRT / TFLite；见视觉相关仓库。 |
+| 科研计算与自动化 | Python、PyTorch、MATLAB、FEniCS、Git / Docker；用于建模、资料处理与研究复现。 |
+
+## 联系
+
+**邮箱：** [xzc18155121449@163.com](mailto:xzc18155121449@163.com)<br/>
+**视频与动态：** [Bilibili · 1664940404](https://space.bilibili.com/1664940404)<br/>
+**代码与文档：** [github.com/zc-xzc](https://github.com/zc-xzc)
+
+具体项目问题也可在对应仓库的 Issues 中交流。引用或复用时，请以各仓库及其第三方组件的许可为准。
