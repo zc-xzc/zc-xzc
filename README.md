@@ -9,11 +9,12 @@ Mechanism · Algorithm · Intelligence
 
 [邮件联系](mailto:xzc18155121449@163.com) · [Bilibili](https://space.bilibili.com/1664940404) · [全部仓库](https://github.com/zc-xzc?tab=repositories)
 
-[精选项目](#user-content-精选项目) · [研究与技术方案](#user-content-研究与技术方案) · [更多工程与笔记](#user-content-更多工程与笔记) · [开源复用与参考](#user-content-开源复用与参考) · [技术领域](#user-content-技术领域)
+[精选项目](#user-content-精选项目) · [复现工程](#user-content-02--openreal2sim--复现工程与验证) · [研究与技术方案](#user-content-研究与技术方案) · [更多工程与笔记](#user-content-更多工程与笔记) · [开源复用与参考](#user-content-开源复用与参考) · [技术领域](#user-content-技术领域)
 
 ## 从这里开始
 
 - **看机器人软硬件协同：** [主动视觉平台](https://github.com/zc-xzc/robot_platform)，从机械结构、头部追踪到云台控制。
+- **看研究复现与验证：** [OpenReal2Sim 复现工程](https://github.com/zc-xzc/openreal2sim-reproduction-showcase)，查看分阶段工具、安全补丁与验证证据。
 - **找具身智能学习路线：** [具身智能学习手册](https://github.com/zc-xzc/embodied-ai-learning-handbook)，按主题组织理论、论文与实践资源。
 - **在线体验交互作品：** [MathViz 数学可视化](https://zc-xzc.github.io/MathViz/)，从三维线性方程组理解解的几何意义。
 
@@ -39,7 +40,19 @@ Mechanism · Algorithm · Intelligence
 
 [项目总览](https://github.com/zc-xzc/robot_platform) · [中文运行说明](https://github.com/zc-xzc/robot_platform/blob/main/active_vision_dist/README_CN.md) · [机械安装教程](https://github.com/zc-xzc/robot_platform/blob/main/3d_print_parts/avp_model/docs/installation_mechanical.md) · [物料清单](https://github.com/zc-xzc/robot_platform/blob/main/3d_print_parts/avp_model/bom/avp_model_BOM.xlsx)
 
-### 02 · 具身智能学习手册 / embodied-ai-learning-handbook
+### 02 · OpenReal2Sim / 复现工程与验证
+
+**研究复现辅助工具 · 来源锁定 / 安全入口 / 分阶段验收**
+
+围绕 [PointsCoder/OpenReal2Sim](https://github.com/PointsCoder/OpenReal2Sim) 整理独立展示仓库，将公开源码来源、执行步骤、产物检查和验证证据串联起来，便于判断每个阶段做了什么、还缺什么。
+
+- **工程内容：** 固定上游版本与直接子模块，提供默认只输出计划的执行辅助工具、4 文件安全补丁、路径与资产校验，以及中文执行和排错手册。
+- **已验证范围：** 70 项合成 CPU 工具测试及静态检查；对应自动检查见[验证记录](https://github.com/zc-xzc/openreal2sim-reproduction-showcase/actions/runs/42449638043)。结构检查通过不等于重建质量或物理结果合格。
+- **贡献与边界：** 上游模型和重建算法不计为原创。GPU 端到端、完整环境与模型锁、真实输入、标注、视频及仿真仍未验证，不能称为完整或离线一键复现。
+
+[项目总览](https://github.com/zc-xzc/openreal2sim-reproduction-showcase) · [执行手册](https://github.com/zc-xzc/openreal2sim-reproduction-showcase/blob/main/docs/execution-runbook.zh-CN.md) · [验证状态](https://github.com/zc-xzc/openreal2sim-reproduction-showcase/blob/main/docs/verification-status.zh-CN.md) · [贡献与归属](https://github.com/zc-xzc/openreal2sim-reproduction-showcase/blob/main/docs/contribution-audit.zh-CN.md)
+
+### 03 · 具身智能学习手册 / embodied-ai-learning-handbook
 
 **学习资料与资源整理 · 从基础理论到研究方向**
 
@@ -51,7 +64,7 @@ Mechanism · Algorithm · Intelligence
 
 [手册首页](https://github.com/zc-xzc/embodied-ai-learning-handbook) · [学习路径](https://github.com/zc-xzc/embodied-ai-learning-handbook/blob/main/00-总览与学习路径/00.2-学习路径规划.md) · [资源导航](https://github.com/zc-xzc/embodied-ai-learning-handbook/blob/main/00-总览与学习路径/00.3-资源导航地图.md) · [主动视觉专题](https://github.com/zc-xzc/embodied-ai-learning-handbook/blob/main/12-主动视觉专项/12.1-主动视觉技术全景与论文综述.md)
 
-### 03 · 双目三维重建 / Stereo 3D Reconstruction
+### 04 · 双目三维重建 / Stereo 3D Reconstruction
 
 **视觉代码集成 · 标定 / 深度估计 / 三维重建**
 
@@ -63,7 +76,7 @@ Mechanism · Algorithm · Intelligence
 
 [项目与目录说明](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system) · [重建流程](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system/tree/main/stereo_reconstruction_working) · [第三方说明](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system/blob/main/THIRD_PARTY_NOTICES.md)
 
-### 04 · MathViz / 让数学看得见
+### 05 · MathViz / 让数学看得见
 
 **浏览器交互作品 · 线性代数可视化**
 
@@ -73,7 +86,7 @@ Mechanism · Algorithm · Intelligence
 
 [在线体验](https://zc-xzc.github.io/MathViz/) · [打开三维求解器](https://zc-xzc.github.io/MathViz/线性代数/非齐次解三维演示/) · [项目与使用说明](https://github.com/zc-xzc/MathViz)
 
-### 05 · academic-tools / 科研与文件处理工具箱
+### 06 · academic-tools / 科研与文件处理工具箱
 
 **Python 工具集 · 文本分析 / 批量处理 / 工作流整理**
 
