@@ -20,7 +20,11 @@ Mechanism · Algorithm · Intelligence
 
 ## 精选项目
 
+*Star 数量由动态徽章自动获取，可能因缓存稍有延迟；实时数值以仓库页面为准。*
+
 ### 01 · 主动视觉平台 / robot_platform
+
+[![GitHub Stars](https://img.shields.io/github/stars/zc-xzc/robot_platform?style=flat-square&label=Stars)](https://github.com/zc-xzc/robot_platform/stargazers)
 
 **工程代码与硬件设计资产 · 头部追踪 / 两自由度云台 / RGB-D 视觉**
 
@@ -42,6 +46,8 @@ Mechanism · Algorithm · Intelligence
 
 ### 02 · OpenReal2Sim / 复现工程与验证
 
+[![GitHub Stars](https://img.shields.io/github/stars/zc-xzc/openreal2sim-reproduction-showcase?style=flat-square&label=Stars)](https://github.com/zc-xzc/openreal2sim-reproduction-showcase/stargazers)
+
 **研究复现辅助工具 · 来源锁定 / 安全入口 / 分阶段验收**
 
 围绕 [PointsCoder/OpenReal2Sim](https://github.com/PointsCoder/OpenReal2Sim) 整理独立展示仓库，将公开源码来源、执行步骤、产物检查和验证证据串联起来，便于判断每个阶段做了什么、还缺什么。
@@ -53,6 +59,8 @@ Mechanism · Algorithm · Intelligence
 [项目总览](https://github.com/zc-xzc/openreal2sim-reproduction-showcase) · [执行手册](https://github.com/zc-xzc/openreal2sim-reproduction-showcase/blob/main/docs/execution-runbook.zh-CN.md) · [验证状态](https://github.com/zc-xzc/openreal2sim-reproduction-showcase/blob/main/docs/verification-status.zh-CN.md) · [贡献与归属](https://github.com/zc-xzc/openreal2sim-reproduction-showcase/blob/main/docs/contribution-audit.zh-CN.md)
 
 ### 03 · 具身智能学习手册 / embodied-ai-learning-handbook
+
+[![GitHub Stars](https://img.shields.io/github/stars/zc-xzc/embodied-ai-learning-handbook?style=flat-square&label=Stars)](https://github.com/zc-xzc/embodied-ai-learning-handbook/stargazers)
 
 **学习资料与资源整理 · 从基础理论到研究方向**
 
@@ -66,6 +74,8 @@ Mechanism · Algorithm · Intelligence
 
 ### 04 · 双目三维重建 / Stereo 3D Reconstruction
 
+[![GitHub Stars](https://img.shields.io/github/stars/zc-xzc/Dual-eye-three-dimensional-reconstruction-system?style=flat-square&label=Stars)](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system/stargazers)
+
 **视觉代码集成 · 标定 / 深度估计 / 三维重建**
 
 围绕双目相机的空间感知流程，组织相机标定、立体校正与匹配、视差和深度计算、点云重建，以及手眼标定与坐标转换相关代码。
@@ -78,6 +88,8 @@ Mechanism · Algorithm · Intelligence
 
 ### 05 · MathViz / 让数学看得见
 
+[![GitHub Stars](https://img.shields.io/github/stars/zc-xzc/MathViz?style=flat-square&label=Stars)](https://github.com/zc-xzc/MathViz/stargazers)
+
 **浏览器交互作品 · 线性代数可视化**
 
 把抽象数学概念转成可以观察和操作的空间结构。当前核心模块是 **3×3 线性方程组三维求解器**：输入矩阵与方程参数，观察解集的几何形态，理解“非齐次通解 = 特解 + 齐次通解”。
@@ -87,6 +99,8 @@ Mechanism · Algorithm · Intelligence
 [在线体验](https://zc-xzc.github.io/MathViz/) · [打开三维求解器](https://zc-xzc.github.io/MathViz/线性代数/非齐次解三维演示/) · [项目与使用说明](https://github.com/zc-xzc/MathViz)
 
 ### 06 · academic-tools / 科研与文件处理工具箱
+
+[![GitHub Stars](https://img.shields.io/github/stars/zc-xzc/academic-tools?style=flat-square&label=Stars)](https://github.com/zc-xzc/academic-tools/stargazers)
 
 **Python 工具集 · 文本分析 / 批量处理 / 工作流整理**
 
