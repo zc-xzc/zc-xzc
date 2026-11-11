@@ -1,26 +1,26 @@
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/workbench-cover-mobile.svg">
+  <img src="./assets/workbench-cover.svg" alt="zc-xzc：机器人机构、视觉感知与具身智能研究工作台；主动视觉云台示意图" width="100%">
+</picture>
+
 # 许子成 · Zicheng Xu
 
-**机器人机构设计 · 视觉感知 · 具身智能**<br/>
-Mechanism · Algorithm · Intelligence
+**机器人机构设计 · 视觉感知 · 具身智能**
 
-围绕**机构与算法协同**，关注机器人如何感知环境、执行动作，以及如何把研究问题转化为可查看的模型、代码和实验方案。这里集中展示我的工程项目、研究设计与学习资料，并区分各项目当前已公开的内容和验证阶段。
+围绕**机构与算法协同**，把研究问题转化为可查看的模型、代码和实验方案。这里展示工程项目、研究设计与学习资料，同时说明每个项目的来源、公开内容与验证阶段。
 
-*Working across robot mechanisms, visual perception, and embodied AI. This profile brings together engineering projects, research concepts, and study resources, with links to the underlying work.*
+*Working across robot mechanisms, visual perception, and embodied AI.*
 
-[邮件联系](mailto:xzc18155121449@163.com) · [Bilibili](https://space.bilibili.com/1664940404) · [全部仓库](https://github.com/zc-xzc?tab=repositories)
+[精选作品](#精选作品) · [学习与工具](#学习与工具) · [研究方案](#研究与技术方案) · [更多项目](#更多工程与笔记) · [全部仓库](https://github.com/zc-xzc?tab=repositories) · [联系](#联系)
 
-[精选项目](#user-content-精选项目) · [复现工程](#user-content-02--openreal2sim--复现工程与验证) · [研究与技术方案](#user-content-研究与技术方案) · [更多工程与笔记](#user-content-更多工程与笔记) · [开源复用与参考](#user-content-开源复用与参考) · [技术领域](#user-content-技术领域)
+| 从机构出发 | 让流程可验证 | 让概念可交互 |
+| :--- | :--- | :--- |
+| [主动视觉平台](https://github.com/zc-xzc/robot_platform) | [OpenReal2Sim 复现工程](https://github.com/zc-xzc/openreal2sim-reproduction-showcase) | [MathViz 在线体验 ↗](https://zc-xzc.github.io/MathViz/) |
+| 机械设计 → 姿态映射 → 云台控制 | 来源锁定 → 分阶段执行 → 证据检查 | 方程参数 → 三维结构 → 几何理解 |
 
-## 从这里开始
+## 精选作品
 
-- **看机器人软硬件协同：** [主动视觉平台](https://github.com/zc-xzc/robot_platform)，从机械结构、头部追踪到云台控制。
-- **看研究复现与验证：** [OpenReal2Sim 复现工程](https://github.com/zc-xzc/openreal2sim-reproduction-showcase)，查看分阶段工具、安全补丁与验证证据。
-- **找具身智能学习路线：** [具身智能学习手册](https://github.com/zc-xzc/embodied-ai-learning-handbook)，按主题组织理论、论文与实践资源。
-- **在线体验交互作品：** [MathViz 数学可视化](https://zc-xzc.github.io/MathViz/)，从三维线性方程组理解解的几何意义。
-
-## 精选项目
-
-*Star 数量由动态徽章自动获取，可能因缓存稍有延迟；实时数值以仓库页面为准。*
+*Star 徽章自动获取数据，缓存可能造成延迟；实时数量以仓库页面为准。封面为基于云台外形的示意设计，下方 CAD 图来自项目资产。*
 
 ### 01 · 主动视觉平台 / robot_platform
 
@@ -58,35 +58,7 @@ Mechanism · Algorithm · Intelligence
 
 [项目总览](https://github.com/zc-xzc/openreal2sim-reproduction-showcase) · [执行手册](https://github.com/zc-xzc/openreal2sim-reproduction-showcase/blob/main/docs/execution-runbook.zh-CN.md) · [验证状态](https://github.com/zc-xzc/openreal2sim-reproduction-showcase/blob/main/docs/verification-status.zh-CN.md) · [贡献与归属](https://github.com/zc-xzc/openreal2sim-reproduction-showcase/blob/main/docs/contribution-audit.zh-CN.md)
 
-### 03 · 具身智能学习手册 / embodied-ai-learning-handbook
-
-[![GitHub Stars](https://img.shields.io/github/stars/zc-xzc/embodied-ai-learning-handbook?style=flat-square&label=Stars)](https://github.com/zc-xzc/embodied-ai-learning-handbook/stargazers)
-
-**学习资料与资源整理 · 从基础理论到研究方向**
-
-按主题组织具身智能知识与公开资源，帮助学习者建立连贯的学习路线。内容涵盖视觉-语言-动作模型（VLA）、模仿学习、强化学习、遥操作、仿真、Sim2Real、数据采集与主动视觉。
-
-- **如何使用：** 先确定学习路径，再按专题阅读基础概念、论文和工具资料。
-- **可以找到：** 理论笔记、论文导读、MuJoCo / Isaac Lab 等仿真资源，以及 ALOHA / UMI 等遥操作资料。
-- **来源与许可：** 参考 Embodied-AI-Guide、Xbotics-Embodied-Guide 等社区资料整理，详见[致谢](https://github.com/zc-xzc/embodied-ai-learning-handbook/blob/main/ACKNOWLEDGMENTS.md)；使用时遵循仓库标注的 CC BY-NC-SA 4.0 及引用资源许可。
-
-[手册首页](https://github.com/zc-xzc/embodied-ai-learning-handbook) · [学习路径](https://github.com/zc-xzc/embodied-ai-learning-handbook/blob/main/00-总览与学习路径/00.2-学习路径规划.md) · [资源导航](https://github.com/zc-xzc/embodied-ai-learning-handbook/blob/main/00-总览与学习路径/00.3-资源导航地图.md) · [主动视觉专题](https://github.com/zc-xzc/embodied-ai-learning-handbook/blob/main/12-主动视觉专项/12.1-主动视觉技术全景与论文综述.md)
-
-### 04 · 双目三维重建 / Stereo 3D Reconstruction
-
-[![GitHub Stars](https://img.shields.io/github/stars/zc-xzc/Dual-eye-three-dimensional-reconstruction-system?style=flat-square&label=Stars)](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system/stargazers)
-
-**视觉代码集成 · 标定 / 深度估计 / 三维重建**
-
-围绕双目相机的空间感知流程，组织相机标定、立体校正与匹配、视差和深度计算、点云重建，以及手眼标定与坐标转换相关代码。
-
-- **可查看内容：** 重建流程与自定义算法目录、标定工具、数据增强与可视化材料、YOLOv12 集成代码。
-- **技术重点：** 从二维图像建立空间几何关系，为测距、定位与机器人视觉应用提供代码参考。
-- **复用说明：** 仓库包含第三方组件，使用前需查看各组件许可与来源说明。
-
-[项目与目录说明](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system) · [重建流程](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system/tree/main/stereo_reconstruction_working) · [第三方说明](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system/blob/main/THIRD_PARTY_NOTICES.md)
-
-### 05 · MathViz / 让数学看得见
+### 03 · MathViz / 让数学看得见
 
 [![GitHub Stars](https://img.shields.io/github/stars/zc-xzc/MathViz?style=flat-square&label=Stars)](https://github.com/zc-xzc/MathViz/stargazers)
 
@@ -98,9 +70,54 @@ Mechanism · Algorithm · Intelligence
 
 [在线体验](https://zc-xzc.github.io/MathViz/) · [打开三维求解器](https://zc-xzc.github.io/MathViz/线性代数/非齐次解三维演示/) · [项目与使用说明](https://github.com/zc-xzc/MathViz)
 
-### 06 · academic-tools / 科研与文件处理工具箱
+## 学习与工具
+
+学习路线、视觉代码与科研自动化工具。展开查看内容、使用方式与来源。
+
+### 具身智能学习手册 / embodied-ai-learning-handbook
+
+[![GitHub Stars](https://img.shields.io/github/stars/zc-xzc/embodied-ai-learning-handbook?style=flat-square&label=Stars)](https://github.com/zc-xzc/embodied-ai-learning-handbook/stargazers)
+
+<details>
+<summary>查看内容、使用方式与来源</summary>
+
+**学习资料与资源整理 · 从基础理论到研究方向**
+
+按主题组织具身智能知识与公开资源，帮助学习者建立连贯的学习路线。内容涵盖视觉-语言-动作模型（VLA）、模仿学习、强化学习、遥操作、仿真、Sim2Real、数据采集与主动视觉。
+
+- **如何使用：** 先确定学习路径，再按专题阅读基础概念、论文和工具资料。
+- **可以找到：** 理论笔记、论文导读、MuJoCo / Isaac Lab 等仿真资源，以及 ALOHA / UMI 等遥操作资料。
+- **来源与许可：** 参考 Embodied-AI-Guide、Xbotics-Embodied-Guide 等社区资料整理，详见[致谢](https://github.com/zc-xzc/embodied-ai-learning-handbook/blob/main/ACKNOWLEDGMENTS.md)；使用时遵循仓库标注的 CC BY-NC-SA 4.0 及引用资源许可。
+
+[手册首页](https://github.com/zc-xzc/embodied-ai-learning-handbook) · [学习路径](https://github.com/zc-xzc/embodied-ai-learning-handbook/blob/main/00-总览与学习路径/00.2-学习路径规划.md) · [资源导航](https://github.com/zc-xzc/embodied-ai-learning-handbook/blob/main/00-总览与学习路径/00.3-资源导航地图.md) · [主动视觉专题](https://github.com/zc-xzc/embodied-ai-learning-handbook/blob/main/12-主动视觉专项/12.1-主动视觉技术全景与论文综述.md)
+
+</details>
+
+### 双目三维重建 / Stereo 3D Reconstruction
+
+[![GitHub Stars](https://img.shields.io/github/stars/zc-xzc/Dual-eye-three-dimensional-reconstruction-system?style=flat-square&label=Stars)](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system/stargazers)
+
+<details>
+<summary>查看内容、使用方式与来源</summary>
+
+**视觉代码集成 · 标定 / 深度估计 / 三维重建**
+
+围绕双目相机的空间感知流程，组织相机标定、立体校正与匹配、视差和深度计算、点云重建，以及手眼标定与坐标转换相关代码。
+
+- **可查看内容：** 重建流程与自定义算法目录、标定工具、数据增强与可视化材料、YOLOv12 集成代码。
+- **技术重点：** 从二维图像建立空间几何关系，为测距、定位与机器人视觉应用提供代码参考。
+- **复用说明：** 仓库包含第三方组件，使用前需查看各组件许可与来源说明。
+
+[项目与目录说明](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system) · [重建流程](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system/tree/main/stereo_reconstruction_working) · [第三方说明](https://github.com/zc-xzc/Dual-eye-three-dimensional-reconstruction-system/blob/main/THIRD_PARTY_NOTICES.md)
+
+</details>
+
+### academic-tools / 科研与文件处理工具箱
 
 [![GitHub Stars](https://img.shields.io/github/stars/zc-xzc/academic-tools?style=flat-square&label=Stars)](https://github.com/zc-xzc/academic-tools/stargazers)
+
+<details>
+<summary>查看内容、使用方式与来源</summary>
 
 **Python 工具集 · 文本分析 / 批量处理 / 工作流整理**
 
@@ -112,11 +129,14 @@ Mechanism · Algorithm · Intelligence
 
 [工具总览](https://github.com/zc-xzc/academic-tools) · [政策统计脚本](https://github.com/zc-xzc/academic-tools/blob/main/classification/policy/policy_stats.py) · [文件处理](https://github.com/zc-xzc/academic-tools/tree/main/file_utils) · [来源与许可](https://github.com/zc-xzc/academic-tools/blob/main/THIRD_PARTY_NOTICES.md)
 
+</details>
+
 ## 研究与技术方案
 
-以下项目展示问题定义、系统设计与验证思路，阶段与工程实现项目分开说明。
+以下为研究与设计阶段项目，与工程实现、实验结果分开呈现。
 
-### 采后水果处理智能框架 / postharvest-agent-framework
+<details>
+<summary>采后水果处理智能框架 / postharvest-agent-framework</summary>
 
 **阶段：概念研究设计。当前公开框架图与设计说明，尚无实现代码、数据集或实验结果。**
 
@@ -126,7 +146,10 @@ Mechanism · Algorithm · Intelligence
 
 [项目说明](https://github.com/zc-xzc/postharvest-agent-framework) · [框架图](https://github.com/zc-xzc/postharvest-agent-framework/blob/main/figures/postharvest_agent_framework_en.svg) · [设计与验证方案](https://github.com/zc-xzc/postharvest-agent-framework/blob/main/docs/framework-overview.md)
 
-### 无人机单张纸页投放装置 / uav-leaflet-dispenser
+</details>
+
+<details>
+<summary>无人机单张纸页投放装置 / uav-leaflet-dispenser</summary>
 
 **阶段：技术方案与文档设计。包含专利交底书源稿，不表示已获专利授权。**
 
@@ -135,6 +158,8 @@ Mechanism · Algorithm · Intelligence
 已公开需求规格、总体方案、研制计划、测试验收方案及专利交底稿；仓库尚未提供 CAD、固件、样机照片或实测结果。文档中的性能指标属于设计与验收目标。
 
 [项目总览](https://github.com/zc-xzc/uav-leaflet-dispenser) · [总体技术方案](https://github.com/zc-xzc/uav-leaflet-dispenser/blob/main/03_总体技术方案设计.md) · [测试与验收方案](https://github.com/zc-xzc/uav-leaflet-dispenser/blob/main/06_测试与验收方案.md)
+
+</details>
 
 ## 更多工程与笔记
 
@@ -177,3 +202,4 @@ Mechanism · Algorithm · Intelligence
 **代码与文档：** [github.com/zc-xzc](https://github.com/zc-xzc)
 
 具体项目问题也可在对应仓库的 Issues 中交流。引用或复用时，请以各仓库及其第三方组件的许可为准。
+
